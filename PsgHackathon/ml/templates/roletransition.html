@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="head" >
+            <div class="three">
+                <h1 style="color:#23395d">Predicted Role : </h1>
+                <h2 style="color:#23395d">{{b}}</h2>
+                <br/>
+                <h1 style="color:#23395d">Skills to be Learned</h1>
+            </div>
+            <br>
+            <h3 style="color:#23395d">
+            <ul>
+                {% for i in a%}
+                   <li>{{i}}</li> 
+                {% endfor %}
+            </ul>
+            </h3>
+            <br>
+        </div>
+    </div>
+
+{% endblock content %}

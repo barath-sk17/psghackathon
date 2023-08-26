@@ -1,0 +1,117 @@
+.three h1 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  .three h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #23395d;
+  }
+  .three h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    max-width: 255px;
+    background-color: #23395d;
+  }
+
+
+
+  .six h1 {
+    text-align: center;
+    color:#222; font-size:30px; font-weight:400;
+    text-transform: uppercase;
+    word-spacing: 1px; letter-spacing:2px; color:#23395d;
+  }
+  .six h1 span {
+    line-height:2em; padding-bottom:15px;
+    text-transform: none;
+    font-size:.7em;
+    font-weight: normal;
+    font-style: italic; font-family: "Playfair Display","Bookman",serif;
+    color:#23395d; letter-spacing:-0.005em; word-spacing:1px;
+    letter-spacing:none;
+  }
+  .six h1:after, .six h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 4px;
+    content: "";
+    right: 45px; 
+    margin:auto;
+    background-color: #4CAF50;
+  }
+  .six h1:before { 
+  background-color:#4CAF50;
+    left:45px; width:90px;
+  }
+
+  .head{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .btn{
+    width: 50%;
+    background-color: #23395d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .alert {
+    width: 48%;
+    padding: 15px;
+    background-color: #23395d;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 10px;
+  }
+  
+  .alert.success {background-color: #4CAF50;}
+  .alert.fail {background-color: #cd4d29;}
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  .sample {
+    width: 75%;
+    padding: 15px;
+    background-color: #23395d;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 10px;
+
+    
+}

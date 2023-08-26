@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="head" >
+            <div class="three">
+                <h1 style="color:#23395d">Job Assign : </h1>
+                <br/>
+                
+            </div>
+            <br>
+            <h3 style="color:#23395d">
+            <ul>
+                <h2 style="color:#23395d">Project Assigned (in terms of Project id)</h2>
+                {% for i in a %}
+                   <li>{{i}}</li> 
+                {% endfor %}
+                <h2 style="color:#23395d">Corresponding Project Values</h2>
+                {% for j in b %}
+                   <li>{{j}}</li> 
+                {% endfor %}
+            </ul>
+            </h3>
+            <br>
+        </div>
+    </div>
+
+{% endblock content %}

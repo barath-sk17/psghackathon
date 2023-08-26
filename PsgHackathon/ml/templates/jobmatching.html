@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="head" >
+            <div class="three">
+                <h1 style="color:#23395d">Upload the Resume for Searching job</h1>
+            </div>
+
+            {% if messages %}
+            {% for message in messages %}
+                {% if message.tags == 'error'%}
+                    <div class="alert fails">
+                        <span class="closebtn">&times;</span>  
+                        {{message}}
+                    </div>
+                    
+                {% else %}
+                    <div class="alert success">
+                        <span class="closebtn">&times;</span>  
+                        {{message}}
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <div class="sample">
+                        {{some_string}}
+                    </div>
+                    <br />
+
+
+                {% endif %}
+                {% endfor %}
+            {% endif %}
+            <br>
+            <form action="{% url 'createfile' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div>
+                    <label><h3>Resume</h3></label>
+                    {{form.resume_file}}
+                </div>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+                
+            
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+        }
+        </script>
+
+{% endblock content %}
